@@ -29,6 +29,10 @@ body {
     font-weight: 400;
 }
 
+.font-xs {
+    font-size: 10px;
+}
+
 // colors
 .black {
     color: #1D242D;
@@ -56,7 +60,7 @@ body {
 
 // removes default dropdown icon
 .dropdown-toggle::after {
-    content: none; /* This removes the default dropdown icon */
+    content: none;
 }
 
 app-navbar {
@@ -74,3 +78,26 @@ app-data-grid {
         }
     }
 }
+
+// hover states to show eye icon on rows
+.eye-icon {
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.3s ease;
+  }
+
+  .row-hover {
+    &:hover {
+      .eye-icon {
+        visibility: visible;
+      }
+    }
+  }
+  
+  .list-group-item {
+    &:hover {
+      .eye-icon {
+        visibility: visible;
+      }
+    }
+}
+  

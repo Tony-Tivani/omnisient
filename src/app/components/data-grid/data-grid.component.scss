@@ -29,6 +29,14 @@ tbody {
     }
 }
 
+.table-hover {
+    cursor: pointer;
+}
+
+.width-70 {
+    width: 70px;
+}
+
 /* Styling for buttons */
 button {
     padding: 4px 6px;
@@ -121,4 +129,35 @@ button {
 
 .dropdown-icon {
     margin: 0 0 0 5px;
+}
+
+/* Tooltip container styling */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 3px;
+  }
+  
+  /* Tooltip styling */
+  .tooltip {
+    visibility: hidden;
+    width: 170px;
+    background-color: #FFFFFF;
+    color: #1D242D;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    transition: opacity 0.3s;
+    border: 1px solid #DBDCDD;
+  }
+  
+  /* Show the tooltip when hovering over the icon */
+  .tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }

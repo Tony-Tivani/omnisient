@@ -338,66 +338,50 @@ export class DataService {
   }
 
   getActivites(): Observable<Activity[]> {
-    const activities: Activity[] = [{
+    const activities: Activity[] = [
+    {
       id: 1,
+      name: 'John Doe',
       type: 'Issue {{dataset}}',
+      description: 'Login',
+      date: new Date('2025-01-13T06:49:11')
+    },
+    {
+      id: 2,
+      name: 'Jennifer Doe',
+      type: 'Uploaded',
       description: 'Hydration Failed',
       date: new Date('2025-01-13T06:49:11')
     },
     {
       id: 2,
-      type: 'Issue {{dataset}}',
-      description: 'Hydration Failed',
-      date: new Date('2025-01-13T06:49:11')
-    }, 
-    {
-      id: 3,
-      type: 'Uploaded {{dataset}}',
-      description: 'by Jennifer Doe',
-      date: new Date('2025-01-13T06:49:11')
-    }, 
-    {
-      id: 4,
+      name: 'William',
       type: 'Login',
-      description: 'Jennifer Doe',
+      description: '',
       date: new Date('2025-01-13T06:49:11')
-    }, 
+    },
     {
-      id: 5,
+      id: 1,
+      name: 'John Doe',
       type: 'Issue {{dataset}}',
+      description: 'Login',
+      date: new Date('2025-01-13T06:49:11')
+    },
+    {
+      id: 2,
+      name: 'Jennifer Doe',
+      type: 'Uploaded',
       description: 'Hydration Failed',
       date: new Date('2025-01-13T06:49:11')
-    }, 
+    },
     {
-      id: 6,
-      type: 'Uploaded {{dataset}}',
-      description: 'Hydration Failed',
-      date: new Date('2025-01-13T06:49:11')
-    }, 
-    {
-      id: 7,
-      type: 'Reviewed {{dataset}}',
-      description: 'by John McFarlen',
-      date: new Date('2025-01-13T06:49:11')
-    }, 
-    {
-      id: 8,
+      id: 2,
+      name: 'William',
       type: 'Login',
-      description: 'John McFarlen',
+      description: '',
       date: new Date('2025-01-13T06:49:11')
-    }, 
-    {
-      id: 9,
-      type: 'Issue {{dataset}}',
-      description: 'Hydration Failed',
-      date: new Date('2025-01-13T06:49:11')
-    }, 
-    {
-      id: 10,
-      type: 'Issue {{dataset}}',
-      description: 'Hydration Failed',
-      date: new Date('2025-01-13T06:49:11')
-    }];
+    }
+  ];
 
     return of(activities);
   } 

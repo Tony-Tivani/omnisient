@@ -1,14 +1,13 @@
 <ul class="vertical-list">
     <li *ngFor="let activity of (showAll ? activities : activities.slice(0, 3))">
       <div class="body-sm">
-        {{ activity.description }}
+        {{ activity.type }}: {{ activity.name }}
       </div>
       <div class="body-sm gray-06 weight-400">
         {{ activity.date | date:'d MMM yyyy HH:mm' }}
       </div>
     </li>
 </ul>
-  
 <p class="body-sm weight-400 mb-0 text-decoration-underline" (click)="toggleShowAll()">
     {{ showAll ? 'Show less activity' : 'View all activity' }}
 </p>  

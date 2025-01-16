@@ -1,5 +1,6 @@
 export class Activity {
-    id!: Number;
+    id!: number;
+    name?: string
     type!: string;
     description!: string;
     date!: Date;

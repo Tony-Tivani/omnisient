@@ -51,11 +51,6 @@ export class DataGridComponent {
   sortList(): void {
     this.dataSets.sort((a, b) => {
       let comparison = 0;
-      // if (a[this.sortColumn] < b[this.sortColumn]) {
-      //   comparison = -1;
-      // } else if (a[this.sortColumn] > b[this.sortColumn]) {
-      //   comparison = 1;
-      // }
       return this.sortDirection === 'asc' ? comparison : -comparison;
     });
   }
