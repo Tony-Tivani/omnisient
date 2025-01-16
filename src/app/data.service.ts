@@ -8,7 +8,7 @@ import { Activity } from './models/activity.model';
 })
 export class DataService {
 
-  constructor() { }
+  constructor() {}
 
   getDatasets(): Observable<DataSet[]> {
     const datasets: DataSet[] = [{
@@ -16,6 +16,7 @@ export class DataService {
       name: 'Type Dataset',
       createdBy: 'Philip Hall',
       createDate: new Date('2025-02-04T20:45:11'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Failed'
     },
@@ -24,6 +25,7 @@ export class DataService {
       name: 'Actually Dataset',
       createdBy: 'Michelle Scott',
       createDate: new Date('2025-01-13T06:49:34'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Failed'
     },
@@ -32,7 +34,7 @@ export class DataService {
       name: 'Choice Dataset',
       createdBy: 'Kenneth Chaney',
       createDate: new Date('2025-01-26T14:12:27'),
-      lastModifiedBy: undefined,
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       uploadStatus: 'Failed'
     },
     {
@@ -49,6 +51,7 @@ export class DataService {
       name: 'Family Dataset',
       createdBy: 'Thomas Parks',
       createDate: new Date('2025-01-14T05:11:36'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Completed'
     },
@@ -57,6 +60,7 @@ export class DataService {
       name: 'Easy Dataset',
       createdBy: 'Diane Robinson',
       createDate: new Date('2025-01-30T11:43:45'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Completed'
     },
@@ -74,6 +78,7 @@ export class DataService {
       name: 'Usually Dataset',
       createdBy: 'Abigail Levy',
       createDate: new Date('2025-01-28T22:31:24'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'In Progress'
     },
@@ -91,6 +96,7 @@ export class DataService {
       name: 'Last Dataset',
       createdBy: 'Brandon Simon',
       createDate: new Date('2025-01-06T23:11:53'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Pending'
     },
@@ -108,6 +114,7 @@ export class DataService {
       name: 'Professor Dataset',
       createdBy: 'Elizabeth Kennedy MD',
       createDate: new Date('2025-02-11T04:58:42'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Failed'
     },
@@ -116,6 +123,7 @@ export class DataService {
       name: 'Child Dataset',
       createdBy: 'Lynn Davis',
       createDate: new Date('2025-02-07T10:38:13'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'In Progress'
     },
@@ -133,6 +141,7 @@ export class DataService {
       name: 'Though Dataset',
       createdBy: 'Kevin Harris',
       createDate: new Date('2025-02-12T02:20:34'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Pending'
     },
@@ -141,6 +150,7 @@ export class DataService {
       name: 'Kitchen Dataset',
       createdBy: 'Kathy Ibarra',
       createDate: new Date('2025-01-23T05:59:10'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Failed'
     },
@@ -149,6 +159,7 @@ export class DataService {
       name: 'Later Dataset',
       createdBy: 'Kimberly Hamilton',
       createDate: new Date('2025-01-08T23:43:04'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Completed'
     },
@@ -166,6 +177,7 @@ export class DataService {
       name: 'Car Dataset',
       createdBy: 'Steven Black',
       createDate: new Date('2025-02-10T02:36:45'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Pending'
     },
@@ -174,6 +186,7 @@ export class DataService {
       name: 'Writer Dataset',
       createdBy: 'Kendra Richardson',
       createDate: new Date('2025-01-30T08:50:50'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Failed'
     },
@@ -209,6 +222,7 @@ export class DataService {
       name: 'Sell Dataset',
       createdBy: 'James Rich',
       createDate: new Date('2025-01-14T11:45:53'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Failed'
     },
@@ -217,6 +231,7 @@ export class DataService {
       name: 'Available Dataset',
       createdBy: 'Kirsten Martin',
       createDate: new Date('2025-02-08T11:01:50'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Failed'
     },
@@ -225,6 +240,7 @@ export class DataService {
       name: 'Could Dataset',
       createdBy: 'Denise Banks',
       createDate: new Date('2025-01-03T19:39:39'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Failed'
     },
@@ -233,6 +249,7 @@ export class DataService {
       name: 'Staff Dataset',
       createdBy: 'Matthew Davis',
       createDate: new Date('2025-02-08T20:27:36'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Completed'
     },
@@ -250,6 +267,7 @@ export class DataService {
       name: 'Artist Dataset',
       createdBy: 'Angela Curtis',
       createDate: new Date('2025-01-30T18:00:11'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Failed'
     },
@@ -276,6 +294,7 @@ export class DataService {
       name: 'Join Dataset',
       createdBy: 'Tyler Sanchez',
       createDate: new Date('2025-01-24T16:09:47'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Pending'
     },
@@ -284,6 +303,7 @@ export class DataService {
       name: 'Same Dataset',
       createdBy: 'Albert Becker',
       createDate: new Date('2025-02-05T08:44:59'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Pending'
     },
@@ -310,6 +330,7 @@ export class DataService {
       name: 'Suggest Dataset',
       createdBy: 'Monica Hill',
       createDate: new Date('2025-01-11T14:42:55'),
+      lastModifiedDate: new Date('2025-02-15T19:02:15'),
       lastModifiedBy: undefined,
       uploadStatus: 'Pending'
     }];
@@ -328,42 +349,50 @@ export class DataService {
       type: 'Issue {{dataset}}',
       description: 'Hydration Failed',
       date: new Date('2024-09-25T07:49:20')
-    }, {
+    }, 
+    {
       id: 3,
       type: 'Uploaded {{dataset}}',
       description: 'by Jennifer Doe',
       date: new Date('2024-11-07T16:21:15')
-    }, {
+    }, 
+    {
       id: 4,
       type: 'Login',
       description: 'Jennifer Doe',
       date: new Date('2024-12-13T08:39:24')
-    }, {
+    }, 
+    {
       id: 5,
       type: 'Issue {{dataset}}',
       description: 'Hydration Failed',
       date: new Date('2025-01-04T32:08:42')
-    }, {
+    }, 
+    {
       id: 6,
       type: 'Uploaded {{dataset}}',
       description: 'Hydration Failed',
       date: new Date('2025-01-13T06:49:34')
-    }, {
+    }, 
+    {
       id: 7,
       type: 'Reviewed {{dataset}}',
       description: 'by John McFarlen',
       date: new Date('2025-01-13T06:49:34')
-    }, {
+    }, 
+    {
       id: 8,
       type: 'Login',
       description: 'John McFarlen',
       date: new Date('2025-01-13T06:49:34')
-    }, {
+    }, 
+    {
       id: 9,
       type: 'Issue {{dataset}}',
       description: 'Hydration Failed',
       date: new Date('2025-01-13T06:49:34')
-    }, {
+    }, 
+    {
       id: 10,
       type: 'Issue {{dataset}}',
       description: 'Hydration Failed',

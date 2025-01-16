@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './notification-icon.component.html',
   styleUrl: './notification-icon.component.scss'
 })
-export class NotificationIconComponent {
-
-}
+export class NotificationIconComponent {}

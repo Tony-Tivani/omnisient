@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './north-east-icon.component.html',
   styleUrl: './north-east-icon.component.scss'
 })
-export class NorthEastIconComponent {
-
-}
+export class NorthEastIconComponent {}

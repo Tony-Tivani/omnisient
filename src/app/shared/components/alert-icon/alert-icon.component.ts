@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './alert-icon.component.html',
   styleUrl: './alert-icon.component.scss'
 })
-export class AlertIconComponent {
-
-}
+export class AlertIconComponent {}

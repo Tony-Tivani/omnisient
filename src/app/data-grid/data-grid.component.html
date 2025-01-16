@@ -57,29 +57,38 @@
             <th (click)="sortBy('name')" class="sortable sm-semi-bold">
               Dataset Name
               <i [ngClass]="{'bi bi-arrow-up': sortColumn === 'name' && sortDirection === 'asc', 
-                               'bi bi-arrow-down': sortColumn === 'name' && sortDirection === 'desc'}"></i>
+              'bi bi-arrow-down': sortColumn === 'name' && sortDirection === 'desc'}">
+              </i>
             </th>
             <th (click)="sortBy('name')" class="sortable sm-semi-bold">
               Uploaded By
               <i [ngClass]="{'bi bi-arrow-up': sortColumn === 'name' && sortDirection === 'asc', 
-                               'bi bi-arrow-down': sortColumn === 'name' && sortDirection === 'desc'}"></i>
+              'bi bi-arrow-down': sortColumn === 'name' && sortDirection === 'desc'}">
+              </i>
             </th>
             <th (click)="sortBy('createDate')" class="sortable sm-semi-bold">
               Updated
               <i [ngClass]="{'bi bi-arrow-up': sortColumn === 'createDate' && sortDirection === 'asc', 
-                               'bi bi-arrow-down': sortColumn === 'createDate' && sortDirection === 'desc'}"></i>
+              'bi bi-arrow-down': sortColumn === 'createDate' && sortDirection === 'desc'}">
+              </i>
             </th>
             <th class="sm-semi-bold">Actions</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let item of paginatedData">
-            <td><app-person-icon></app-person-icon><span class="ms-2"><app-alert-icon></app-alert-icon></span></td>
-            <td><p>{{ item.name }}</p></td>
+            <td class="ps-4">
+              <app-person-icon></app-person-icon>
+              <span class="ms-2"><app-alert-icon></app-alert-icon></span>
+            </td>
+            <td><p>{{ item.name }} <app-eye-icon></app-eye-icon></p></td>
             <td><p>{{ item.createdBy }}</p></td>
-            <td><p>{{ item.lastModifiedDate | date: 'mediumDate' }}</p></td>
+            <td><p>{{ item.lastModifiedDate | date:'d MMM yyyy' }}</p></td>
             <td>
-              <button class="btn btn-primary body-sm black weight-400"><app-eye-icon></app-eye-icon><span class="ml-2">View</span></button>
+              <button class="btn btn-primary body-sm black weight-400">
+                <app-eye-icon></app-eye-icon>
+                <span class="ml-2">View</span>
+              </button>
             </td>
           </tr>
         </tbody>
@@ -102,7 +111,7 @@
         <div class="pagination-controls">
           <div class="btn-group">
             <button class="btn btn-outline-primary" (click)="previousPage()" [disabled]="paginator.getCurrentPage === 1">
-              <i class="bi bi-chevron-left"></i> </button>
+              <i class="bi bi-chevron-left"></i></button>
             <button class="btn btn-outline-primary" (click)="nextPage()"
               [disabled]="paginator.getCurrentPage === paginator.getTotalPages"><i class="bi bi-chevron-right"></i>
             </button>
@@ -124,7 +133,9 @@
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
-        <div class="circle"><app-north-east-icon></app-north-east-icon></div>
+        <div class="circle">
+          <app-north-east-icon></app-north-east-icon>
+        </div>
       </div>    
     </div>
   </div>
@@ -139,7 +150,9 @@
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
-        <div class="circle"><app-north-east-icon></app-north-east-icon></div>
+        <div class="circle">
+          <app-north-east-icon></app-north-east-icon>
+        </div>
       </div>  
     </div>
   </div>
@@ -154,7 +167,9 @@
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
-        <div class="circle"><app-north-east-icon></app-north-east-icon></div>
+        <div class="circle">
+          <app-north-east-icon></app-north-east-icon>
+        </div>
       </div>  
     </div>
   </div>

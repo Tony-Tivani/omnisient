@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './person-icon.component.html',
   styleUrl: './person-icon.component.scss'
 })
-export class PersonIconComponent {
-
-}
+export class PersonIconComponent {}

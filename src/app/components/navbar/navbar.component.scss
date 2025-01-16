@@ -1,0 +1,41 @@
+.navbar {
+    padding: 20px 5px;
+    border-bottom: 1px solid #DBDCDD;
+}
+
+.nav-link {
+    margin: 0 20px 0 0;
+}
+
+.nav-link::after {
+    margin: 15px 0 0 15px;
+    position: absolute !important;
+}
+
+.notification {
+    width: 34px;
+    height: 34px;
+    background-color: #F4F4F5;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DBDCDD;
+    padding: 10px;
+    position: relative;
+}
+
+.border-start {
+    height: 34px;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 8px;
+    height: 8px;
+    background-color: #1678D1;
+    border-radius: 50%;
+    z-index: 10;
+  }
