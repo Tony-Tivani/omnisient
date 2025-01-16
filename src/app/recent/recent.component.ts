@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { DataService } from '../data.service';
 import { DataSet } from '../models/dataset.model';
 import { Paginator } from '../helpers/paginator';
+import { EyeIconComponent } from "../shared/components/eye-icon/eye-icon.component";
 
 @Component({
   selector: 'app-recent',
-  imports: [CommonModule],
+  imports: [CommonModule, EyeIconComponent],
   templateUrl: './recent.component.html',
   styleUrl: './recent.component.scss'
 })

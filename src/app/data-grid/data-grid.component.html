@@ -14,7 +14,7 @@
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-              <h6 class="body-sm mb-0">100 <span class="green"><i class="bi bi-arrow-down-left"></i>10%</span></h6>
+                <h6 class="body-sm mb-0">100 <span class="green"><i class="bi bi-arrow-down-left"></i>10%</span></h6>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            <h6 class="body-sm mb-0">10 <span class="red"><i class="bi bi-arrow-up-right"></i>2%</span></h6>
+              <h6 class="body-sm mb-0">10 <span class="red"><i class="bi bi-arrow-up-right"></i>2%</span></h6>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-            <h6 class="body-sm mb-0">15 <span class="green"><i class="bi bi-arrow-up-right"></i>5%</span></h6>
+              <h6 class="body-sm mb-0">15 <span class="green"><i class="bi bi-arrow-up-right"></i>5%</span></h6>
             </div>
           </div>
         </div>
@@ -53,6 +53,7 @@
       <table class="table table-bordered table-hover custom-table">
         <thead>
           <tr>
+            <th></th>
             <th (click)="sortBy('name')" class="sortable sm-semi-bold">
               Dataset Name
               <i [ngClass]="{'bi bi-arrow-up': sortColumn === 'name' && sortDirection === 'asc', 
@@ -73,11 +74,12 @@
         </thead>
         <tbody>
           <tr *ngFor="let item of paginatedData">
+            <td><app-person-icon></app-person-icon><span class="ms-2"><app-alert-icon></app-alert-icon></span></td>
             <td><p>{{ item.name }}</p></td>
             <td><p>{{ item.createdBy }}</p></td>
             <td><p>{{ item.lastModifiedDate | date: 'mediumDate' }}</p></td>
             <td>
-              <button class="btn btn-primary body-sm black weight-400"><i class="bi bi-eye"></i><span class="ml-2">View</span></button>
+              <button class="btn btn-primary body-sm black weight-400"><app-eye-icon></app-eye-icon><span class="ml-2">View</span></button>
             </td>
           </tr>
         </tbody>
@@ -113,35 +115,37 @@
 <div class="row align-items-start mt-3">
   <div class="col">
     <div class="card">
-      <div class="card-body dropdown-section py-2">
-          <h6 class="dropdown-toggle p-0 m-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            My Datasets
-          </h6>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <div class="card-body dropdown-section py-2">
+      <div class="card-body dropdown-section py-2 d-flex justify-content-between align-items-center">
         <h6 class="dropdown-toggle p-0 m-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Partner Datasets
+          My Datasets
         </h6>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
-      </div>
+        <div class="circle"><app-north-east-icon></app-north-east-icon></div>
+      </div>    
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <div class="card-body dropdown-section py-2">
+      <div class="card-body dropdown-section py-2 d-flex justify-content-between align-items-center">
+        <h6 class="dropdown-toggle p-0 m-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Partner Dataset
+        </h6>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        <div class="circle"><app-north-east-icon></app-north-east-icon></div>
+      </div>  
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body dropdown-section py-2 d-flex justify-content-between align-items-center">
         <h6 class="dropdown-toggle p-0 m-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Connections
         </h6>
@@ -150,7 +154,8 @@
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
-      </div>
+        <div class="circle"><app-north-east-icon></app-north-east-icon></div>
+      </div>  
     </div>
   </div>
 </div>

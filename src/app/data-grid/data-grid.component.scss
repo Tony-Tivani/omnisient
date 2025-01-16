@@ -29,6 +29,11 @@ button {
     span {
         margin-left: 5px;
     }
+    &:hover {
+        background-color: #C7C8CB;
+        border-color: #C7C8CB;
+        color: black;
+    }
 }
 
 .dropdown-toggle {
@@ -85,3 +90,15 @@ button {
         cursor: pointer;
     }
 }
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #F4F4F5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DBDCDD;
+}
+  

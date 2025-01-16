@@ -1,3 +1,17 @@
+.navbar {
+    padding: 20px 5px;
+    border-bottom: 1px solid #DBDCDD;
+}
+
+.nav-link {
+    margin: 0 20px 0 0;
+}
+
+.nav-link::after {
+    margin: 15px 0 0 15px;
+    position: absolute !important;
+}
+
 header {
     background-image: url('../app/assets/images/welcome-banner.png');
     background-size: cover; /* Ensures the image covers the entire screen */
@@ -14,3 +28,31 @@ header {
 .card-header {
     background-color: transparent;
 }
+
+.notification {
+    width: 34px;
+    height: 34px;
+    background-color: #F4F4F5;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DBDCDD;
+    padding: 10px;
+    position: relative;
+}
+
+.border-start {
+    height: 34px;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 7px; /* Adjust the positioning to place it on top */
+    right: 7px; /* Adjust as necessary */
+    width: 8px;
+    height: 8px;
+    background-color: #1678D1; /* Choose any color */
+    border-radius: 50%; /* Makes it round */
+    z-index: 10; /* Ensure it appears on top of other elements */
+  }
