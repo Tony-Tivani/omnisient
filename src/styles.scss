@@ -49,3 +49,25 @@ body {
 .red {
     color: #EB4528;
 }
+
+
+// removes default dropdown icon
+.dropdown-toggle::after {
+    content: none; /* This removes the default dropdown icon */
+}
+
+app-navbar {
+    app-dropdown-icon {
+        svg {
+            margin: 10px 0 0 10px;
+        }
+    }
+}
+
+app-data-grid {
+    app-dropdown-icon {
+        svg {
+            margin: -2px 0 0 0;
+        }
+    }
+}

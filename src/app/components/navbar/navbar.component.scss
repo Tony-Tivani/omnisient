@@ -3,15 +3,6 @@
     border-bottom: 1px solid #DBDCDD;
 }
 
-.nav-link {
-    margin: 0 20px 0 0;
-}
-
-.nav-link::after {
-    margin: 15px 0 0 15px;
-    position: absolute !important;
-}
-
 .notification {
     width: 34px;
     height: 34px;
@@ -38,4 +29,4 @@
     background-color: #1678D1;
     border-radius: 50%;
     z-index: 10;
-  }
+}

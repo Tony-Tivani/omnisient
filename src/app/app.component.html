@@ -6,10 +6,15 @@
     <!-- Main Content -->
     <div class="col-md-9">
       <!-- Header inside main content -->
-      <header class="bg-primary text-white">
-        <h2 class="title-level-2" ngNonBindable>Welcome, {{customer_name}} </h2>
-        <p class="body-md-regular mb-0">You have 2 new notifications</p>
-      </header>
+      <header class="bg-primary text-white d-flex align-items-center justify-content-start p-3">
+        <div>
+          <h2 class="title-level-2 mb-0" ngNonBindable>Welcome, {{customer_name}}</h2>
+          <p class="body-md-regular mb-0">You have 2 new notifications</p>
+        </div>
+        <div class="header-items ms-auto d-flex align-items-center">
+          <app-dropdown-icon-white></app-dropdown-icon-white>
+        </div>
+      </header>      
       <app-data-grid></app-data-grid>
     </div>
 

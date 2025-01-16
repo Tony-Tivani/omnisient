@@ -8,10 +8,11 @@ import { EyeIconComponent } from "../shared/components/eye-icon/eye-icon.compone
 import { PersonIconComponent } from "../shared/components/person-icon/person-icon.component";
 import { AlertIconComponent } from "../shared/components/alert-icon/alert-icon.component";
 import { NorthEastIconComponent } from "../shared/components/north-east-icon/north-east-icon.component";
+import { DropdownIconComponent } from "../shared/components/dropdown-icon/dropdown-icon.component";
 
 @Component({
   selector: 'app-data-grid',
-  imports: [CommonModule, FormsModule, EyeIconComponent, PersonIconComponent, AlertIconComponent, NorthEastIconComponent],
+  imports: [CommonModule, FormsModule, EyeIconComponent, PersonIconComponent, AlertIconComponent, NorthEastIconComponent, DropdownIconComponent],
   templateUrl: './data-grid.component.html',
   styleUrl: './data-grid.component.scss'
 })
