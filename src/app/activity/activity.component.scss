@@ -1,0 +1,36 @@
+.vertical-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 0.5px;
+    background: #C7C8CB;
+    position: absolute;
+    left: 4px;
+    top: 20px;
+    height: calc(100% - 10px);
+  }
+
+  li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 15px;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #99C9FB;
+      transform: translateY(-50%); /* Centers the bullet vertically */
+      position: absolute;
+      left: 0;
+      top: 18px;
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    background-color: #F2F5F9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-level-2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.sm-regular {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.body-md-regular {
+    font-size: 14px;
+}
+
+.body-sm, .sm-semi-bold {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+// fonts 
+.weight-400 {
+    font-weight: 400;
+}
+
+// colors
+.black {
+    color: #1D242D;
+}
+
+.gray-06 {
+    color: #626973;
+}
+
+.green {
+    color: #75BB34;
+}
+
+.red {
+    color: #EB4528;
+}

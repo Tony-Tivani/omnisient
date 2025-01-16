@@ -1,0 +1,25 @@
+.btn-light {
+    height: 24px;
+    font-size: 12px;
+    display: block;
+    color: #1D242D;
+    padding: 0 10.5px;
+    border: 1px solid #DBDCDD;
+}
+
+.btn-group {
+    margin: 15px 17px;
+}
+
+.list-group-item:first-child, 
+.list-group-item:last-child {
+    border-radius: 0;
+    border-top: 0;
+}
+
+.list-group-item.active {
+    background-color: #EFEFF0;
+    color: #1D242D;
+    border: none;
+    cursor: pointer;
+}
