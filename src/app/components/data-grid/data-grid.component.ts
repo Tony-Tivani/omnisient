@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { DataService } from '../data.service';
-import { DataSet } from '../models/dataset.model';
-import { Paginator } from '../helpers/paginator';
+import { DataService } from '../../services/data.service';
+import { DataSet } from '../../models/dataset.model';
+import { Paginator } from '../../helpers/paginator';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { EyeIconComponent } from "../shared/components/eye-icon/eye-icon.component";
-import { PersonIconComponent } from "../shared/components/person-icon/person-icon.component";
-import { AlertIconComponent } from "../shared/components/alert-icon/alert-icon.component";
-import { NorthEastIconComponent } from "../shared/components/north-east-icon/north-east-icon.component";
-import { DropdownIconComponent } from "../shared/components/dropdown-icon/dropdown-icon.component";
+import { EyeIconComponent } from "../../shared/components/eye-icon/eye-icon.component";
+import { PersonIconComponent } from "../../shared/components/person-icon/person-icon.component";
+import { AlertIconComponent } from "../../shared/components/alert-icon/alert-icon.component";
+import { NorthEastIconComponent } from "../../shared/components/north-east-icon/north-east-icon.component";
+import { DropdownIconComponent } from "../../shared/components/dropdown-icon/dropdown-icon.component";
 
 @Component({
   selector: 'app-data-grid',

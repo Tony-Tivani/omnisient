@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { DataService } from '../data.service';
-import { DataSet } from '../models/dataset.model';
-import { Paginator } from '../helpers/paginator';
-import { EyeIconComponent } from "../shared/components/eye-icon/eye-icon.component";
+import { EyeIconComponent } from '../../shared/components/eye-icon/eye-icon.component';
+import { DataSet } from '../../models/dataset.model';
+import { Paginator } from '../../helpers/paginator';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-recent',

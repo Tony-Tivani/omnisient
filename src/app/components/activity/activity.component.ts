@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { DataService } from '../data.service';
-import { Activity } from '../models/activity.model';
+import { DataService } from '../../services/data.service';
+import { Activity } from '../../models/activity.model';
 import { CommonModule } from '@angular/common';
 
 @Component({
