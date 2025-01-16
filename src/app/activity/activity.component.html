@@ -1,0 +1,11 @@
+<ul class="vertical-list">
+    <li *ngFor="let activity of activities">
+        <div class="body-sm">
+            {{ activity.description}}
+        </div>
+        <div class="body-sm gray-06 weight-400">
+            {{activity.date | date:'dd MMM yyyy HH:mm'}}
+        </div>
+    </li>
+</ul>
+<p class="body-sm weight-400 mb-0 text-decoration-underline">View all activity</p>

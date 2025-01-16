@@ -1,0 +1,15 @@
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let item of paginatedData"
+    (mouseover)="hoveredItem = item" (mouseleave)="hoveredItem = null" [ngClass]="{ 'active': hoveredItem === item }">
+    <span class="sm-regular">{{ item.name }} <i class="bi bi-eye"></i></span>
+    <span class="sm-regular">{{ item.createDate | date: 'mediumDate' }}</span>
+  </li>
+</ul>
+<div class="d-flex justify-content-end">
+  <div class="btn-group">
+    <button class="btn btn-light" (click)="previousPage()" [disabled]="paginator.getCurrentPage === 1"><i
+        class="bi bi-chevron-left"></i></button>
+    <button class="btn btn-light" (click)="nextPage()"
+      [disabled]="paginator.getCurrentPage === paginator.getTotalPages"><i class="bi bi-chevron-right"></i></button>
+  </div>
+</div>

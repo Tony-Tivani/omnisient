@@ -1,0 +1,112 @@
+
+<div class="card mt-3">
+  <div class="card-body">
+    <div class="container px-0">
+      <div class="row align-items-start mb-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+                <h6 class="dropdown-toggle p-0 m-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown button
+                </h6>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              <h6 class="body-sm mb-0">100</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="dropdown-toggle p-0 m-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </h6>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            <h6 class="body-sm mb-0">100</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="dropdown-toggle p-0 m-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+              </h6>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            <h6 class="body-sm mb-0">100</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6 class="body-sm mb-3">Datasets Pending Review</h6>
+      <table class="table table-bordered table-hover custom-table">
+        <thead>
+          <tr>
+            <th (click)="sortBy('name')" class="sortable sm-semi-bold">
+              Dataset Name
+              <i [ngClass]="{'bi bi-arrow-up': sortColumn === 'name' && sortDirection === 'asc', 
+                               'bi bi-arrow-down': sortColumn === 'name' && sortDirection === 'desc'}"></i>
+            </th>
+            <th (click)="sortBy('name')" class="sortable sm-semi-bold">
+              Uploaded By
+              <i [ngClass]="{'bi bi-arrow-up': sortColumn === 'name' && sortDirection === 'asc', 
+                               'bi bi-arrow-down': sortColumn === 'name' && sortDirection === 'desc'}"></i>
+            </th>
+            <th (click)="sortBy('createDate')" class="sortable sm-semi-bold">
+              Updated
+              <i [ngClass]="{'bi bi-arrow-up': sortColumn === 'createDate' && sortDirection === 'asc', 
+                               'bi bi-arrow-down': sortColumn === 'createDate' && sortDirection === 'desc'}"></i>
+            </th>
+            <th class="sm-semi-bold">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of paginatedData">
+            <td><p>{{ item.name }}</p></td>
+            <td><p>{{ item.createdBy }}</p></td>
+            <td><p>{{ item.lastModifiedDate | date: 'mediumDate' }}</p></td>
+            <td>
+              <button class="btn btn-primary body-sm black weight-400"><i class="bi bi-eye"></i><span class="ml-2">View</span></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-flex justify-content-end align-items-end">
+        <span class="body-sm weight-400 d-contents">Items per page: </span>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="itemsPerPageDropdown"
+            data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+            {{ selectedItemsPerPage }}
+          </button>
+          <div class="dropdown-menu" aria-labelledby="itemsPerPageDropdown">
+            <a *ngFor="let option of itemsPerPageOptions" (click)="onItemsPerPageChange(option)" class="dropdown-item"
+              [class.active]="option === selectedItemsPerPage">
+              {{ option }}
+            </a>
+          </div>
+        </div>
+        <div class="pagination-info body-sm weight-400 d-contents">{{ paginator.getDisplayRange() }} of {{ paginator.getTotalItems }}</div>
+        <div class="pagination-controls">
+          <div class="btn-group">
+            <button class="btn btn-outline-primary" (click)="previousPage()" [disabled]="paginator.getCurrentPage === 1">
+              <i class="bi bi-chevron-left"></i> </button>
+            <button class="btn btn-outline-primary" (click)="nextPage()"
+              [disabled]="paginator.getCurrentPage === paginator.getTotalPages"><i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
