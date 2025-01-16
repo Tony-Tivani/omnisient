@@ -7,15 +7,21 @@ import { CommonModule } from '@angular/common';
   selector: 'app-activity',
   imports: [CommonModule],
   templateUrl: './activity.component.html',
-  styleUrl: './activity.component.scss'
+  styleUrls: ['./activity.component.scss']
 })
 export class ActivityComponent {
-  constructor(private DataService: DataService) { }
   activities: Activity[] = [];
+  showAll: boolean = false;  // Track whether to show all activities
+
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    this.DataService.getActivites().subscribe((data) => {
+    this.dataService.getActivites().subscribe((data) => {
       this.activities = data;
     });
+  }
+
+  toggleShowAll() {
+    this.showAll = !this.showAll;  // Toggle between showing all and 3 items
   }
 }
