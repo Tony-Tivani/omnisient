@@ -28,7 +28,7 @@ export class DataGridComponent {
 
   ngOnInit() {
     this.DataService.getDatasets().subscribe((data) => {      
-      this.dataSets = data;;
+      this.dataSets = data;
     });
 
     this.paginator = new Paginator(this.dataSets, 5);
