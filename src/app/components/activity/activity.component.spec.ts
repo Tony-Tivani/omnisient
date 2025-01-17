@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ActivityComponent } from './activity.component'; // No longer needs to be in declarations
+import { ActivityComponent } from './activity.component';
 import { DataService } from '../../services/data.service';
 import { of } from 'rxjs';
 import { CommonModule } from '@angular/common';
@@ -62,7 +62,7 @@ describe('ActivityComponent', () => {
   });
 
   it('should display all activities when "showAll" is true', () => {
-    component.toggleShowAll(); // Set showAll to true
+    component.toggleShowAll();
     fixture.detectChanges();
 
     const activityItems = fixture.debugElement.queryAll(By.css('ul.vertical-list li'));

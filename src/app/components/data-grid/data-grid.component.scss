@@ -1,7 +1,7 @@
-/* Apply a border-radius to the table and override borders */
+// Table styles
 .custom-table {
     border-radius: 7px 7px 0 0;
-    overflow: hidden; /* Ensure corners stay rounded when borders are applied */
+    overflow: hidden;
 }
 
 th, thead {
@@ -37,7 +37,6 @@ tbody {
     width: 70px;
 }
 
-/* Styling for buttons */
 button {
     padding: 4px 6px;
     border-radius: 5px;
@@ -84,7 +83,6 @@ button {
     color: #1D242D;
 }
 
-/* Align items at the bottom with specific background and border styling */
 .align-items-end {
     margin-top: -16px;
     background: #fff;
@@ -95,18 +93,15 @@ button {
     border-radius: 0 0 7px 7px;
 }
 
-/* Outline for primary buttons */
 .btn-outline-primary {
     padding: 0 10.5px;
     border: 1px solid #DBDCDD;
 }
 
-/* Content display as default display style */
 .d-contents {
     display: contents;
 }
 
-/* Hover effect for dropdown section */
 .dropdown-section {
     &:hover {
         border: 1px solid #1678D1;
@@ -131,7 +126,7 @@ button {
     margin: 0 0 0 5px;
 }
 
-/* Tooltip container styling */
+/* Tooltip styling */
 .tooltip-container {
     position: relative;
     display: inline-block;
@@ -139,7 +134,6 @@ button {
     margin-top: 3px;
   }
   
-  /* Tooltip styling */
   .tooltip {
     visibility: hidden;
     width: 170px;
@@ -156,7 +150,6 @@ button {
     border: 1px solid #DBDCDD;
   }
   
-  /* Show the tooltip when hovering over the icon */
   .tooltip-container:hover .tooltip {
     visibility: visible;
     opacity: 1;
